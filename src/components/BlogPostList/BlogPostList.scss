@@ -1,3 +1,10 @@
+.toast {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 145%);
+}
+
 .blogs-list {
     display: flex;
     flex-direction: column;
@@ -12,7 +19,7 @@
         overflow-y: scroll;
         padding-top: 0px;
         margin-top: 10px;
-    
+
         .blog-post-item {
             border: 1px solid #dee2e6;
             border-radius: 5px;
@@ -20,34 +27,35 @@
             padding: 15px;
             background-color: #ffffff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
+
             h3 {
                 font-size: 1.75rem;
                 color: #007bff;
             }
-    
+
             p {
                 font-size: 1rem;
                 color: #495057;
             }
-    
+
             img {
                 max-width: 100%;
                 height: auto;
                 border-radius: 5px;
             }
-    
+
             a {
                 color: #007bff;
                 text-decoration: none;
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
             }
         }
-    
+
     }
+
     .pagination-buttons {
         text-align: center;
         margin-top: 20px;
