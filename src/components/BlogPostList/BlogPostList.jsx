@@ -16,9 +16,6 @@ const BlogPostList = () => {
                 if (response) {
                     const res = await response.json();
                     let { status, message } = res;
-                    res.articles = [];
-                    status = "error";
-                    message = "Requests from the browser are not allowed on the Developer plan, except from localhost.";
                     if (res?.articles?.length) {
                         setPosts(res.articles);
                         setAllBlogPost(res.articles);
