@@ -36,7 +36,7 @@ const BlogPostList = () => {
         fetchData();
     }, [page]);
 
-    if (errorMsg) 
+    if (errorMsg)
         return (
             <div class="toast showing" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
